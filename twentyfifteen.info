@@ -1,0 +1,13 @@
+name = Twenty Fifteen
+description = Clean theme, blog-focused, and designed for clarity.
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[header] = 'Header'
+regions[sidebar] = 'Sidebar'
+regions[help] = 'Help'
+regions[content] = 'Content'
+regions[footer] = 'Footer'
