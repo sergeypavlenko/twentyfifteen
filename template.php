@@ -20,6 +20,47 @@ function twentyfifteen_preprocess_html(&$variables) {
 
   // Add special font for theme.
   drupal_add_css('//fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext', 'file');
+
+  $html5 = array(
+    '#tag' => 'script',
+    '#attributes' => array(
+      'type' => 'text/javascript',
+      'src' => url(drupal_get_path('theme', 'twentyfifteen') . '/js/html5.js'),
+    ),
+    '#browsers' => array('IE' => 'lt IE 9', '!IE' => FALSE),
+    '#weight' => 997,
+  );
+  drupal_add_html_head($html5, 'html5');
+
+  $ie_style = array(
+    '#tag' => 'link',
+    '#attributes' => array(
+      'src' => url(drupal_get_path('theme', 'twentyfifteen') . '/css/ie.css', array('query' => array('ver' => '20141010'))),
+      'rel' => 'stylesheet',
+      'id' => 'twentyfifteen-ie-css',
+      'type' => 'text/css',
+      'media' => 'all',
+    ),
+    '#browsers' => array('IE' => 'lt IE 9', '!IE' => FALSE),
+    '#weight' => 998,
+  );
+  drupal_add_html_head($ie_style, 'ie_style');
+
+  $ie7_style = array(
+    '#tag' => 'link',
+    '#attributes' => array(
+      'src' => url(drupal_get_path('theme', 'twentyfifteen') . '/css/ie7.css', array('query' => array('ver' => '20141010'))),
+      'rel' => 'stylesheet',
+      'id' => 'twentyfifteen-ie-css',
+      'type' => 'text/css',
+      'media' => 'all',
+    ),
+    '#browsers' => array('IE' => 'lt IE 8', '!IE' => FALSE),
+    '#weight' => 999,
+  );
+  drupal_add_html_head($ie7_style, 'ie7_style');
+
+  drupal_add_js("(function(){document.documentElement.className='js'})();", "inline");
 }
 
 /**
