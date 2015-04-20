@@ -1,0 +1,25 @@
+.field-name-field-tags,
+.field-name-field-tags .field-item {
+  display: inline-block;
+}
+
+.field-name-field-tags .field-item:not(:last-child) {
+  padding-right: 10px;
+}
+
+.tabs {
+  padding: 3% 7.6923%;
+}
+
+.item-list ul.pager {
+  margin: 0;
+  padding: 10px;
+}
+
+.item-list ul.pager li {
+  margin: 0;
+}
+
+.pager .pager-item a {
+  font-size: 13px;
+}

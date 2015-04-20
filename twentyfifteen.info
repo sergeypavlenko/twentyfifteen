@@ -17,3 +17,5 @@ regions[footer] = 'Footer'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/drupal-style.css
+stylesheets[all][] = genericons/genericons.css
