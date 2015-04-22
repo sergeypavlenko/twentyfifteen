@@ -7,6 +7,10 @@
   padding-right: 10px;
 }
 
+.block-system.hentry > .content {
+  padding: 0 10% 10%;
+}
+
 .tabs {
   padding: 3% 7.6923%;
 }

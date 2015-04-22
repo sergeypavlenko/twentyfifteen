@@ -82,6 +82,12 @@ function twentyfifteen_preprocess_block(&$variables) {
   if ($block->region == 'sidebar') {
     $variables['classes_array'][] = 'widget';
   }
+
+  if ($block->module == 'system' && $block->delta == 'main') {
+    if (!isset($variables['elements']['nodes'])) {
+      $variables['classes_array'][] = 'hentry';
+    }
+  }
 }
 
 /**
