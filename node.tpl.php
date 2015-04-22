@@ -116,7 +116,7 @@
   </footer><!-- .entry-footer -->
 </article><!-- .post -->
 
-<?php if ($page && isset($content['comments'])): ?>
+<?php if ($page && isset($content['comments']['comments'])): ?>
 <div class="comments-area">
   <?php print render($content['comments']); ?>
 </div>
