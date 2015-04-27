@@ -1,3 +1,7 @@
+header.page-header {
+  margin-bottom: 6%;
+}
+
 .field-name-field-tags,
 .field-name-field-tags .field-item {
   display: inline-block;
@@ -11,8 +15,24 @@
   padding: 0 10% 10%;
 }
 
-.tabs {
+div.tabs {
   padding: 3% 7.6923%;
+  margin: 0;
+}
+
+.tabs ul {
+  border-collapse: collapse;
+  height: auto;
+  line-height: normal;
+  list-style: outside none none;
+  margin: 5px;
+  padding: 0 0 0 1em;
+  white-space: nowrap;
+}
+
+.tabs a,
+.tabs ul li {
+  display: inline;
 }
 
 .item-list ul.pager {

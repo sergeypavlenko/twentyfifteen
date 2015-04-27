@@ -1,0 +1,17 @@
+name: 'Twenty Fifteen'
+type: theme
+description: 'Clean theme, blog-focused, and designed for clarity.'
+core: 8.x
+
+libraries:
+  - twentyfifteen/base
+
+stylesheets-remove:
+  - normalize.css
+
+regions:
+  header: Header
+  sidebar: Sidebar
+  help: Help
+  content: Content
+  footer: Footer

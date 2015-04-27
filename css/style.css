@@ -1578,6 +1578,7 @@ img.aligncenter {
 	padding-top: calc(7.6923% + 24px);
 }
 
+.hentry.not-first,
 .hentry + .hentry {
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
 }
@@ -2668,12 +2669,14 @@ p > video {
 		margin: 0 7.6923%;
 	}
 
+  .hentry.not-first,
 	.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {
 		margin-top: 7.6923%;
 	}
 
+  .hentry.not-first,
 	.hentry + .hentry {
 		border-top: 0;
 	}
@@ -4281,6 +4284,7 @@ p > video {
 		padding-top: 8.3333%;
 	}
 
+  .hentry.not-first,
 	.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {
@@ -5652,6 +5656,7 @@ p > video {
 	td,
 	.site-header,
 	.site-footer,
+  .hentry.not-first,
 	.hentry + .hentry,
 	.author-info,
 	.page-header,
@@ -5680,6 +5685,7 @@ p > video {
 		display: block;
 	}
 
+  .hentry.not-first,
 	.hentry + .hentry {
 		margin-top: 7.6923%;
 	}

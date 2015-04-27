@@ -1,0 +1,12 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      css/style.css: {}
+      css/drupal-style.css: {}
+      genericons/genericons.css: {}
+  js:
+    js/twentyfifteen.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
