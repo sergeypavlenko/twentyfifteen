@@ -30,6 +30,8 @@ function twentyfifteen_theme_suggestions_alter(array &$suggestions, array &$vari
       if ($variables['elements']['#plugin_id'] !== 'system_powered_by_block') {
         $variables['elements']['#attributes']['class'][] = 'widget';
       }
+
+      $variables['title_attributes']['class'][] = 'widget-title';
     }
   }
 
