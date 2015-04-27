@@ -1,7 +1,5 @@
 <?php
 
-use Drupal\Core\Language\Language;
-
 /**
  * Implements hook_preprocess_html().
  */
@@ -69,6 +67,9 @@ function twentyfifteen_preprocess_node(&$variables) {
   $variables['title'] = $node->getTitle();
 }
 
+/**
+ * Implements hook_preprocess_field().
+ */
 function twentyfifteen_preprocess_field(&$variables) {
   $element = $variables['element'];
 
@@ -82,6 +83,9 @@ function twentyfifteen_preprocess_field(&$variables) {
   }
 }
 
+/**
+ * Implements hook_preprocess_comment().
+ */
 function twentyfifteen_preprocess_comment(&$variables) {
   /** @var \Drupal\comment\CommentInterface $comment */
   $comment = $variables['elements']['#comment'];
@@ -92,7 +96,4 @@ function twentyfifteen_preprocess_comment(&$variables) {
   $account = comment_prepare_author($comment);
 
   $variables['author_url'] = \Drupal::l($account->getUsername(), $account->urlInfo());
-}
-
-function twentyfifteen_preprocess_image(&$variables) {
 }
