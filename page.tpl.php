@@ -111,5 +111,5 @@
   </div>
   <footer id="colophon" class="site-footer" role="contentinfo">
     <?php print render($page['footer']); ?>
-  </div>
+  </footer>
 </div>
