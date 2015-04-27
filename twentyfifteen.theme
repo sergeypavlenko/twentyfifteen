@@ -1,24 +1,21 @@
 <?php
 
 /**
- * Implements hook_preprocess_html().
+ * Implements hook_css_alter().
  */
-function twentyfifteen_preprocess_html(&$variables) {
-  $noto_sans = array(
-    '#type' => 'html_tag',
-    '#tag' => 'link',
-    '#attributes' => [
-      'rel' => 'stylesheet',
-      'href' => '//fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext',
-      'media' => 'all',
-    ],
-    '#browsers' => [
-      'IE' => TRUE,
-      '!IE' => TRUE,
-    ],
+function twentyfifteen_css_alter(&$css) {
+  // Add google font.
+  $googlefonts = '//fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext';
+  $css[$googlefonts] = array(
+    'data' => $googlefonts,
+    'type' => 'external',
+    'every_page' => TRUE,
+    'media' => 'all',
+    'preprocess' => FALSE,
+    'group' => CSS_AGGREGATE_THEME,
+    'browsers' => array('IE' => TRUE, '!IE' => TRUE),
+    'weight' => -1,
   );
-
-  $variables['styles'][] = $noto_sans;
 }
 
 /**
