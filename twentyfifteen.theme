@@ -63,6 +63,7 @@ function twentyfifteen_preprocess_node(&$variables) {
   $variables['changed'] = format_date($node->getChangedTime());
   $variables['changed_iso'] = date_iso8601($node->getChangedTime());
 
+  // Node title without span for title links.
   $variables['title'] = $node->getTitle();
 }
 
