@@ -24,4 +24,5 @@ stylesheets[all][] = genericons/genericons.css
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
 
+scripts[] = js/functions.js
 scripts[] = js/twentyfifteen.js

@@ -80,6 +80,7 @@
       <div class="site-branding">
         <h1 class="site-title"><?php print l($site_name, '<front>', array('attributes' => array('title' => $site_name))); ?></h1>
         <p class="site-description"><?php print $site_slogan; ?></p>
+        <button class="secondary-toggle"><?php print t('Menu and widgets'); ?></button>
       </div><!-- .site-branding -->
       <?php print render($page['header']); ?>
     </header><!-- .site-header -->
