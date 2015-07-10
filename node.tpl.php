@@ -101,6 +101,7 @@
   </div>
 
   <footer class="entry-footer">
+    <?php if ($display_submitted): ?>
     <span class="posted-on">
       <span class="screen-reader-text"><?php print t('Posted on'); ?> </span>
       <a href="<?php print $node_url; ?>" rel="bookmark">
@@ -108,6 +109,8 @@
         <time class="updated" datetime="<?php print date_iso8601($changed); ?>"><?php print format_date($changed); ?></time>
       </a>
     </span>
+    <?php endif; ?>
+
     <?php if (isset($content['field_tags']['#items'])): ?>
     <span class="tags-links"><span class="screen-reader-text"><?php print t('Tags'); ?> </span>
       <?php print render($content['field_tags']); ?>
