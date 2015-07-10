@@ -112,9 +112,9 @@
     <?php endif; ?>
 
     <?php if (isset($content['field_tags']['#items'])): ?>
-    <span class="tags-links"><span class="screen-reader-text"><?php print t('Tags'); ?> </span>
+    <div class="tags-links"><span class="screen-reader-text"><?php print t('Tags'); ?> </span>
       <?php print render($content['field_tags']); ?>
-    </span>
+    </div>
     <?php endif; ?>
   </footer><!-- .entry-footer -->
 </article><!-- .post -->
